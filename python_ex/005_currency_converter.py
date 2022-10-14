@@ -12,5 +12,4 @@ def get_exchange_rate(target1, target2):
     containers = content.find('span', {'data-test': 'instrument-price-last'})
     print(containers.text)
 
-
 get_exchange_rate('usd', 'krw')
