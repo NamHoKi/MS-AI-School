@@ -57,7 +57,6 @@ image_caption = result['description']['captions'][0]['text']
 
 print(image_caption)
 
-# 
 
 '''
 Object Detection
@@ -78,6 +77,8 @@ data = {'url' : image_url}
 reponse = requests.post(objectDetection_url, headers = headers, params = params, json = data)
 
 result = reponse.json()
+
+print(result)
 
 
 # 시각화
