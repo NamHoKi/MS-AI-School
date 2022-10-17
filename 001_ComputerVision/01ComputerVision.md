@@ -1,8 +1,9 @@
+<hr>
 <h3>
 Computer Vision Object Dectection<br>
 Computer Vision API를 사용해서 이미지속에 있는 사물을 인식하는 데모 입니다.<br>
 네트워크 통신을 위해서 requests 패키지를 import 합니다.
-</h3>
+</h3><hr>
 
 ```
 from email import header
@@ -84,9 +85,10 @@ a group of people standing in front of a crowd
 ```
 
 
-
+<hr>
 <h3>Object Detection</h3>
-
+<hr>
+    
 ```
 objectDetection_url = vision_base_url + 'detect'
 
@@ -145,3 +147,5 @@ DrawBox(result)
 
 image.show()
 ```
+
+![cat_dog](https://user-images.githubusercontent.com/48282708/196098929-3d77e94e-cc6f-433d-8d91-e3b0615728c0.png)
