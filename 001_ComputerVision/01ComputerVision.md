@@ -1,6 +1,6 @@
 <h3>
-Computer Vision Object Dectection
-Computer Vision API를 사용해서 이미지속에 있는 사물을 인식하는 데모 입니다.
+Computer Vision Object Dectection<br>
+Computer Vision API를 사용해서 이미지속에 있는 사물을 인식하는 데모 입니다.<br>
 네트워크 통신을 위해서 requests 패키지를 import 합니다.
 </h3>
 
