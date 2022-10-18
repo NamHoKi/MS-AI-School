@@ -2,11 +2,9 @@
 <hr>
 
 ### MS AI School 과정에서 배우는 코드를 정리해놓은 저장소입니다.<br>
-### 자세한 내용은 상단 디렉토리로 이동해주세요.
+### 자세한 내용은 상단 디렉토리로 이동 또는 아래 링크를 클릭해주세요.
 -----
 # [001. Computer Vision](https://github.com/NamHoKi/MS-AI-School/edit/main/001_ComputerVision) <br>
-### [MS Azure](https://portal.azure.com/)
-
 <hr>
 
   ## Computer Vision - I. Start
