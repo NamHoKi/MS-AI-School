@@ -3,8 +3,8 @@ import requests
 from PIL import Image, ImageDraw, ImageFont
 from io import BytesIO
 
-subscription_key = 'ff75fdf6d10f493e82457c7278b31bcb' # key 1 value
-face_api_url = 'https://labuser42face.cognitiveservices.azure.com/face/v1.0/detect' # 엔드포인트 + face/v1.0/detect
+subscription_key = 'key 1 입력' # key 1 value
+face_api_url = '엔드포인트 + face/v1.0/detect 입력' # 엔드포인트 + face/v1.0/detect
 
 image_url = 'http://photo.sentv.co.kr/photo/2021/08/24/20210824093751.jpg'
 
