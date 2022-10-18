@@ -26,8 +26,8 @@ import json
 <p>Subscription Key와 접속에 필요한 URL을 설정합니다.</P>
 
 ```
-subscription_key = '601478c2f16e4ee89eebf0f8028dca96' #key 1 value
-vision_base_url = 'https://labuser42computervosion.cognitiveservices.azure.com/vision/v2.0/' #엔드포인트 + viosn/v2.0
+subscription_key = '키1 값' #key 1 value
+vision_base_url = '엔드포인트/vision/v2.0/' #엔드포인트 + viosn/v2.0
 
 analyze_url = vision_base_url + 'analyze' # 이미지 분석을 위한 주소
 ```
