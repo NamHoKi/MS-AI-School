@@ -5,12 +5,12 @@ from azure.cognitiveservices.vision.customvision.training.models import ImageFil
 from msrest.authentication import ApiKeyCredentials
 import os, time, uuid
 
-ENDPOINT_Training = 'https://labuser42.cognitiveservices.azure.com/'
-ENDPOINT_Prediction = 'https://labuser42-prediction.cognitiveservices.azure.com/'
+ENDPOINT_Training = '트레이닝 엔드포인트 입력'
+ENDPOINT_Prediction = '예측 엔드포인트 입력'
 
-training_key = '4460f06ba7f444859410b91219d500d2'
-prediction_key = '81e1fea1551d457d8679678649d3ed54'
-prediction_resource_id = '/subscriptions/7ae06d59-97e1-4a36-bbfe-efb081b9b03b/resourceGroups/RG42/providers/Microsoft.CognitiveServices/accounts/labuser42'
+training_key = '트레이닝 키 값 입력'
+prediction_key = '예측 키 값 입력'
+prediction_resource_id = '예측 리소스 아이디 입력'
 
 # publish_iteration_name = 'classfyModel'
 credentials = ApiKeyCredentials(in_headers={"Training-key": training_key})
