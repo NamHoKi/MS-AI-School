@@ -5,13 +5,14 @@ import os, time, uuid
 
 ENDPOINT = 'https://labuser42.cognitiveservices.azure.com/'
 
-training_key = '4460f06ba7f444859410b91219d500d2'
-prediction_key = '81e1fea1551d457d8679678649d3ed54'
-prediction_resource_id = '/subscriptions/7ae06d59-97e1-4a36-bbfe-efb081b9b03b/resourceGroups/RG42/providers/Microsoft.CognitiveServices/accounts/labuser42'
+training_key = 'training key 입력' # training key
+prediction_key = 'prediction key 입력' # prediction key
+prediction_resource_id = 'prediction resource id 입력' # prediction resource id
 
 publish_iteration_name = 'classfyModel'
 credentials = ApiKeyCredentials(in_headers={"Training-key": training_key})
-trainer = CustomVisionTrainingClient(ENDPOINT, credentials) # https://github.com/Azure-Samples/cognitive-services-quickstart-code/blob/master/python/CustomVision/ImageClassification/CustomVisionQuickstart.py
+trainer = CustomVisionTrainingClient(ENDPOINT, credentials)
+# https://github.com/Azure-Samples/cognitive-services-quickstart-code/blob/master/python/CustomVision/ImageClassification/CustomVisionQuickstart.py
 
 print("Creating project...")
 project = trainer.create_project("Labuser42 Project")
