@@ -38,4 +38,25 @@
   
 <hr>
 
-# [003 Scikit Learn]
+# [003 Scikit Learn](https://github.com/NamHoKi/MS-AI-School/tree/main/003_Scikit_Learn)
+
+<hr>
+
+  ## 1.
+  ## 2.
+  
+<hr>
+
+# [004 Basic Deep Learning](https://github.com/NamHoKi/MS-AI-School/tree/main/004_Basic_Deep_Learning)
+
+  ## 1.
+  ## 2.
+  
+<hr>
+
+# [005 Deep Learning in Python](https://github.com/NamHoKi/MS-AI-School/tree/main/005_Deep_Learning_in_Python)
+
+  ## 1.
+  ## 2.
+
+<hr>
