@@ -42,15 +42,15 @@
 
 <hr>
 
-  ## 1.
-  ## 2.
+  ## 1. Spervised Learning
+  ## 2. Unsupervised Learning
   
 <hr>
 
 # [004 Basic Deep Learning](https://github.com/NamHoKi/MS-AI-School/tree/main/004_Basic_Deep_Learning)
 
-  ## 1.
-  ## 2.
+  ## 1. Keras Mnist (유명한 손글씨 데이터)
+  ## 2. 텐서, 신경망, 기초 수학
   
 <hr>
 
