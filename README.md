@@ -56,10 +56,23 @@
 
 # [005 Deep Learning in Python](https://github.com/NamHoKi/MS-AI-School/tree/main/005_Deep_Learning_in_Python)
 
-  ## 1.
-  ## 2.
+<hr>
+
+# [006 Storage Blob](https://github.com/NamHoKi/MS-AI-School/tree/main/006_Storage_Blob)
 
 <hr>
+
+# [101 Data Analysis](https://github.com/NamHoKi/MS-AI-School/tree/main/101_Data_Analysis)
+
+<hr>
+
+# [202 Preprocessing](https://github.com/NamHoKi/MS-AI-School/tree/main/202_Preprocessiong)
+
+<hr>
+
+# [303 NN](https://github.com/NamHoKi/MS-AI-School/tree/main/303_NN)
+
+
 
 
 
