@@ -1,1 +1,1 @@
-# 인공신경망
+# cumstom data set
