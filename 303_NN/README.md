@@ -1,5 +1,6 @@
 # I. Classification 
 
+* [PyTorch and Albumentations for image classification](https://albumentations.ai/docs/examples/pytorch_classification/)
 
 ## 1. 데이터 분포 확인 
 
