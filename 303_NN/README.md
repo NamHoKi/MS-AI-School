@@ -106,6 +106,12 @@ val_transform = A.Compose([
 # 3. test_transform = ⋯
 
 ```
+
+* dataset
+
+* DataLoader
+
+   * [DataLoader Parameter](https://subinium.github.io/pytorch-dataloader/)
  
 
 ## 5. 테스트
