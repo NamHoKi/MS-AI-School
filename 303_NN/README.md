@@ -27,13 +27,13 @@
 
 ## 3. Custom dataset 구축 !! -> pytorch dataset 상속 -> class 
 
-__init__
+* __init__
 
 이미지 폴더에서 이미지 경로 가져오기 -> list 
 
 transform -> 정의 !! 
 
-__getitem__
+* __getitem__
 
 이미지 경로가 담겨있는 list -> 인덱스 추출 -> for
 
@@ -53,7 +53,7 @@ __getitem__
 
   return 이미지, 라벨 
 
-__len__
+* __len__
 
    전체 데이터 길이 반환-> list -> len()
 
@@ -62,7 +62,50 @@ __len__
 
 ## 4. 학습에 필요한 코드 
 
+* device
+```
+import torch
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+```
 
+* transform
+1. train_transfrom
+2. val_transform
+3. test_transform
+
+```
+# 1. train_transform 예시 (albumentation)
+
+import albumentations as A
+from albumentations.pytorch import ToTensorV2
+
+train_transform = A.Compose([
+    A.SmallestMaxSize(max_size = 256),
+    A.Resize(height=224, width=224),
+    
+    ⋯
+
+    A.RandomShadow(p=0.5),
+    A.RandomFog(p=0.4),
+    A.RandomSnow(p=0.4),
+    A.RandomBrightnessContrast(p=0.5),
+    A.ShiftScaleRotate(shift_limit=0.05, scale_limit=0.05,
+                       rotate_limit=15, p=0.7),
+    A.HorizontalFlip(p=0.5),
+    A.Normalize(mean=(0.485, 0.456, 0.406), std =(0.229,0.224,0.225)),
+    ToTensorV2()
+])
+
+# 2. val_transform
+val_transform = A.Compose([
+
+   ⋯
+   
+   ])
+   
+# 3. test_transform = ⋯
+
+```
  
 
 ## 5. 테스트
