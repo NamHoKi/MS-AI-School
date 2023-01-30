@@ -7,7 +7,7 @@ MMDetection Tutorial : https://mmdetection.readthedocs.io/en/latest/tutorials/
 
 <hr>
 
-# Label
+# [Label](https://velog.io/@jaeha0725/Object-Detection-Label-COCO-YOLO-KITTI)
 
 ## 1. COCO
 ![coco_label](https://user-images.githubusercontent.com/48282708/215417470-e9c0987b-9335-4eba-bc68-219de0955923.png)
@@ -59,5 +59,7 @@ MMDetection Tutorial : https://mmdetection.readthedocs.io/en/latest/tutorials/
 
 # mmdetection
 assis : https://github.com/ashnair1/COCO-Assistant
+               
 참고 블로그1 : https://velog.io/@dust_potato/MM-Detection-Config-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-2
+               
 참고 블로그2 : https://velog.io/@dust_potato/MM-Detection-Config-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-3
