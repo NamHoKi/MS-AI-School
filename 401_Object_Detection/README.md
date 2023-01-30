@@ -43,3 +43,5 @@ MMDetection Tutorial : https://mmdetection.readthedocs.io/en/latest/tutorials/
 
 <hr>
 
+# mmdetection
+assis : https://github.com/ashnair1/COCO-Assistant
