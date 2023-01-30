@@ -7,6 +7,20 @@ MMDetection Tutorial : https://mmdetection.readthedocs.io/en/latest/tutorials/
 
 <hr>
 
+# Label
+
+## 1. COCO
+![coco_label](https://user-images.githubusercontent.com/48282708/215417470-e9c0987b-9335-4eba-bc68-219de0955923.png)
+
+## 2. YOLO
+![yolo_label](https://user-images.githubusercontent.com/48282708/215417593-75a3bfa5-e9f1-4bed-851f-0d23470a2091.png)
+
+## 3. VOC & KITTI
+![voc_label](https://user-images.githubusercontent.com/48282708/215417597-31b52029-f700-4fa8-a54b-c4a8a1236df0.png)
+
+
+<hr>
+
 # voc
 
 <folder> : 데이터셋 디렉토리명
