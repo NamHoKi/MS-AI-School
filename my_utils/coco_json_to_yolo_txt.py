@@ -17,7 +17,7 @@ class Coco_json_to_yolo_txt() :
 
     def json2txt(self):
         # load json
-        with open(self.json_path[0]) as f :
+        with open(self.json_path[0], 'r', encoding='utf-8') as f :
             json_object = json.load(f)
 
         # label
