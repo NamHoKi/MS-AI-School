@@ -3,7 +3,6 @@ import glob
 import json
 import shutil
 
-
 class Coco_json_to_yolo_txt() :
     def __init__(self, path, mode):
         self.all_image_path = glob.glob(os.path.join(path, mode, '*.jpg'))
