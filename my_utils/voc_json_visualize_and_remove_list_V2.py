@@ -1,3 +1,14 @@
+'''
+<설정>
+ 1. 126, 127 번째 줄에 자신의 라벨 폴더경로, 이미지 폴더경로 설정
+ 2. 130번째 줄에 자기가 맡은 txt 파일 경로 설정
+<사용법>
+ 1. s, esc를 제외한 아무 키를 누르면 이미지가 넘어감
+ 2. s를 누르면 보고 있는 이미지를 'remove_list.txt' 파일에 저장함 (문제 있는 이미지가 나오면 s 누르기, 저장되는 이미지명 확인, 콘솔창에 나옴)
+ 3. 콘솔창에 몇번째 이미지를 보고 있는지 (Count) , 현재 보고 있는 이미지의 경로 (Cur image), 출력되니 햇갈리거나 하면 확인
+'''
+
+
 import glob
 import os
 import json
@@ -23,7 +34,7 @@ def read_json(json_path):
         try:
             bbox = annotation['box']
         except Exception as e :
-            print('-' * 20, '박스없다')
+            # print('-' * 20, '박스없다')
             continue
 
         xmin, ymin = bbox[0], bbox[1]
@@ -121,16 +132,24 @@ def main() :
 
     cnt = 0
 
+
+    # 경로 설정
     label_dir = 'D:\\0206\\g\\Training\\label\\1\\'
     image_dir = 'D:\\temp2\\'
 
-    json_paths = glob.glob(os.path.join(label_dir, '*.json'))
+    # json_paths = glob.glob(os.path.join(label_dir, '*.json'))
+    with open('hk.txt', 'r', encoding='utf-8') as f :
+        json_paths = f.read().split('\n')
 
     for json_path in json_paths :
+        json_path = label_dir + json_path[:-4] + '.json'
         cnt += 1
-        # print(cnt)
-        # if cnt < 298 :
-        #     continue
+        print('-'*50)
+        print('Count      :', cnt)
+
+        # 놓치거나 수정할 cnt 찾아가기
+        if cnt < 0 :
+            continue
 
         if not os.path.isfile(json_path):
             print('File does not exist:', json_path)
@@ -143,10 +162,17 @@ def main() :
         image = visualize_test(image, anno_data)
 
         cv2.imshow('visual', image)
+
+        print('Cur image  :', image_path)
         # 이미지 확인 & 키보드 클릭 이벤트 처리: keyboard 버튼 클릭과 (if문 하위에)동작 매칭 - 저장, 삭제 등
         while True:
             key = cv2.waitKey()
-            if key == 27:  # ESC
+            if key == ord('s'):
+                # txdft file save folder
+                with open('./remove_list.txt', 'a') as f:
+                    f.write(f'{image_path}\n')
+                print('Save image :', image_path.split('\\')[-1])
+            elif key == 27:  # ESC
                 cv2.destroyAllWindows()
                 exit()
             else:  # 위 if문에서 지정하지 않은 키보드 입력인 경우 다음 이미지로 넘어감
@@ -155,4 +181,5 @@ def main() :
 
 if __name__ == '__main__':
     main()
-  
+
+
