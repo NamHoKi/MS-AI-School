@@ -1,6 +1,16 @@
 # I. Classification 
 
 * [PyTorch and Albumentations for image classification](https://albumentations.ai/docs/examples/pytorch_classification/)
+* https://pytorch.org/get-started/previous-versions/
+
+```
+set env
+$ conda create -n AI python=3.8
+$ conda activate AI
+$ pip install torch==1.12.1+cu113 torchvision==0.13.1+cu113 torchaudio==0.12.1 --extra-index-url https://download.pytorch.org/whl/cu113
+$ pip install opencv-python==4.5.4.60
+```
+
 
 ## 1. 데이터 분포 확인 
 
