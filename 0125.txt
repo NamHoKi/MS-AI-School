@@ -1,0 +1,40 @@
+0125 09:40
+
+1. data.yaml
+
+2. hyps
+ - low, high 선택
+
+
+main
+parse
+2models/yolov5s.yaml, 3 data/data.yaml , 배치사이즈 변경
+
+
+- scratch-low.yaml : adam, sgd 는 lr 차이 나니까 수정해야함
+
+- torch_utils.py , line 330 모델 추가 하는 방법
+	ex ) pip install adamp
+	      elif name == 'SGDP' :
+		from adamp import SGDP
+		optimizer = SGDP(g[2], lr=lr, weight_decay=1e-5, momentum=momentum, nesterov=True)
+	ex ) name == 'AdamP' :
+		from adamp import AdamP
+		optimizer = AdamP(g[2], lr=lr, betas=(momentum, 0.999, weight_decay=1e-2)
+
+	main parse에서 모델 추가
+
+- lr 변경
+	main line 158
+
+- general.py 에서 step 변경 (논문)
+
+
+
+
+CVAT
+프로젝트 생성,
+라벨입력,
+이미지 업로드
+
+
