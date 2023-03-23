@@ -129,4 +129,3 @@ val_transform = A.Compose([
 ## 5. 테스트
 
 test_transforms = A.compose
-
